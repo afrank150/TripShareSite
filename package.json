@@ -1,0 +1,19 @@
+{
+  "name": "trip-share-site",
+  "version": "1.0.0",
+  "description": "trip share site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afrank150/TripShareSite.git"
+  },
+  "author": "Alexander Frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afrank150/TripShareSite/issues"
+  },
+  "homepage": "https://github.com/afrank150/TripShareSite#readme"
+}
