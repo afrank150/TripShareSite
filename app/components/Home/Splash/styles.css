@@ -19,10 +19,6 @@
   font-size: 50px;
 }
 
-.button {
-  display: table-cell;
-}
-
 @media (min-width: 768px) {
   .container {
     height: 100vh;

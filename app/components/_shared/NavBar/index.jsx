@@ -1,6 +1,5 @@
 import React, { Component, PropTypes, DefaultProps } from 'react';
 import AppBar from 'material-ui/AppBar';
-
 import styles from './styles.css';
 import RightButtons from 'components/_shared/NavBar/RightButtons';
 import MenuDrawer from 'components/_shared/NavBar/MenuDrawer';
@@ -21,7 +20,7 @@ class NavBar extends Component {
 
   render() {
     let className = this.state.collapse ? styles.headerBarCollapse : styles.headerBar;
-    let zDepth = this.state.collapse ? 3 : 0;
+    let zDepth = this.state.collapse ? 2 : 0;
 
     return (
       <AppBar
@@ -29,9 +28,10 @@ class NavBar extends Component {
         showMenuIconButton={false}
         iconElementLeft={<MenuDrawer />}
         zDepth={zDepth}
-        title={<span className={styles.title}>Mapception</span>}
+        title={<span>Mapception</span>}
+        titleStyle={{lineHeight: '50px', verticalAlign: 'middle'}}
         iconElementRight={<RightButtons />}
-     />
+      />
     );
   }
 

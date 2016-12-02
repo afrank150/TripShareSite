@@ -10,5 +10,5 @@ export default {
       alternateTextColor: '#ffffff',
       canvasColor: '#333333',
       borderColor: '#bfbfc9',
-  }
+  },
 };

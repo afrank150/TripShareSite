@@ -24,7 +24,7 @@ export default class MenuDrawer extends Component {
   render() {
     const menuStyle = {
       color: '#ffffff',
-      paddingTop: '12px',
+      paddingTop: '6px',
       cursor: 'pointer',
     };
 

@@ -45,7 +45,7 @@ const LandingButton = (props) => {
   return (
     <div style={divStyle}>
       <div style={circleStyle}>
-        <IconButton style={iconStyle.style} iconStyle={iconStyle.icon}>
+        <IconButton style={iconStyle.style} iconStyle={iconStyle.icon} href={props.href}>
           {props.svgIcon}
         </IconButton>
       </div>

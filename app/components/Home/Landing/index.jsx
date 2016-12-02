@@ -46,18 +46,22 @@ const Landing = (props) => {
           <LandingButton
             svgIcon={<TripIcon />}
             iconTitle="Create a Trip"
+            href="#"
           />
           <LandingButton
             svgIcon={<MapIcon />}
             iconTitle="Browse Trips"
+            href="/trips/"
           />
           <LandingButton
             svgIcon={<CameraIcon />}
             iconTitle="Photo Galleries"
+            href="#"
           />
           <LandingButton
             svgIcon={<WorldIcon />}
             iconTitle="Top Locations"
+            href="#"
           />
         </div>
      </div>

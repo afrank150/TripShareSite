@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base . --progress --inline --colors --history-api-fallback"
   },
   "author": "",
   "license": "ISC",
@@ -27,8 +28,10 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "leaflet": "^1.0.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-leaflet": "^1.0.0",
     "react-router": "^2.8.1",
     "react-tap-event-plugin": "^1.0.0"
   }
