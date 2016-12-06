@@ -4,18 +4,24 @@ import FlatButton from 'material-ui/FlatButton';
 
 const RightButtons = (props) => {
   const style = {
-    color: '#ffffff',
+    marginTop: '3px',
   };
 
   return (
      <span>
-      <FlatButton label="Create a Trip" style={style}/>
+      <FlatButton
+        label="Create a Trip"
+        href="/"
+        style={style}/>
       <FlatButton
         href="/trips/"
         label="Search Trips"
         style={style}
       />
-      <FlatButton label="Sign In" style={style}/>
+      <FlatButton
+        label="Sign In"
+        href="/"
+        style={style}/>
      </span>
   );
 };

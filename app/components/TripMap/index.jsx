@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import NavBar from 'components/_shared/NavBar';
-import { Link } from 'react-router';
 
 export class TripMap extends Component {
   render () {
@@ -9,7 +8,7 @@ export class TripMap extends Component {
 
     const mapStyle = {
       position: 'absolute',
-      top: '50px',
+      top: '56px',
       bottom: '0px',
       right: '0px',
       left: '0px',

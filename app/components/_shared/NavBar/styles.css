@@ -1,20 +1,23 @@
 .headerBar {
   position: fixed !important;
-  height: 90px !important;
-  padding-top: 10px !important;
+  height: 80px !important;
   background-color: transparent !important;
   -webkit-transition: 0.3s ease-in-out !important;
   -moz-transition: 0.3s ease-in-out !important;
   transition: 0.3s ease-in-out !important;
+  border-bottom-width: 1px !important;
+  border-bottom: solid transparent;
 }
 
 .headerBarCollapse {
   position: fixed !important;
-  height: 50px !important;
+  height: 56px !important;
   background-color: #2c3e50 !important;
   -webkit-transition: 0.6s ease-in-out !important;
   -moz-transition: 0.6s ease-in-out !important;
   transition: 0.6s ease-in-out !important;
+  border-bottom-width: 1px !important;
+  border-bottom: solid #337ab7;
 }
 
 @media (min-width: 768px) {

@@ -1,8 +1,7 @@
 import React, { Component, PropTypes, DefaultProps } from 'react';
 import AppBar from 'material-ui/AppBar';
 import styles from './styles.css';
-import RightButtons from 'components/_shared/NavBar/RightButtons';
-import MenuDrawer from 'components/_shared/NavBar/MenuDrawer';
+import SearchBox from 'components/Trips/SearchRightButtons/SearchBox';
 
 
 class NavBar extends Component {
@@ -20,17 +19,17 @@ class NavBar extends Component {
 
   render() {
     let className = this.state.collapse ? styles.headerBarCollapse : styles.headerBar;
-    let zDepth = this.state.collapse ? 2 : 0;
+    let zDepth = this.state.collapse ? 1 : 0;
 
     return (
       <AppBar
         className={className}
         showMenuIconButton={false}
-        iconElementLeft={<MenuDrawer />}
         zDepth={zDepth}
-        title={<span>Mapception</span>}
-        titleStyle={{lineHeight: '50px', verticalAlign: 'middle'}}
-        iconElementRight={<RightButtons />}
+        title={this.props.title}
+        titleStyle={{height: '56px', lineHeight: '56px', verticalAlign: 'middle'}}
+        iconElementRight={this.props.iconElementRight}
+        iconStyleRight={this.props.iconStyleRight}
       />
     );
   }
@@ -38,6 +37,7 @@ class NavBar extends Component {
   handleScroll() {
     this.setState(window.scrollY > 60 ? { collapse: true } : { collapse: false });
   }
+
 }
 
 NavBar.propTypes = {
