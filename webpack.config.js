@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var DotenvPlugin = require('dotenv-webpack');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
@@ -38,5 +39,11 @@ module.exports = {
   postcss: function () {
     return [ require('postcss-cssnext'), require('postcss-reporter') ];
   },
-  plugins: [HTMLWebpackPluginConfig],
+  plugins: [
+    HTMLWebpackPluginConfig,
+    new DotenvPlugin({
+      sample: './.env.default',
+      path: './.env'
+    })
+  ],
 };

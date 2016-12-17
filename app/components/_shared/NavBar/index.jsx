@@ -1,7 +1,6 @@
 import React, { Component, PropTypes, DefaultProps } from 'react';
 import AppBar from 'material-ui/AppBar';
 import styles from './styles.css';
-import SearchBox from 'components/Trips/SearchRightButtons/SearchBox';
 
 
 class NavBar extends Component {
